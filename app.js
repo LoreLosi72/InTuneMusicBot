@@ -50,7 +50,9 @@ bot.onText(/\/start/, (msg) => {
                     ["/findplaylist", "toptenalbum"]
                 ]
             }
-        })
+        }, {
+            parse_mode: "HTML"
+        });
 });
 
 //FIND ARTIST

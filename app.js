@@ -42,7 +42,7 @@ const bot = new TelegramBot(Token, {
 bot.onText(/\/start/, (msg) => {
     var sito = "https://intunemusic-telegram.herokuapp.com/";
     bot.sendMessage(msg.chat.id, "<b>Benvenuto su InTuneMusicBot, Tutte le informazioni live su artisti, canzoni, playlist, album e classifiche" + guitar + "\n Visita il nostro sito: " +
-        "<a href=  \"" + sito + "\"</a></b>", {
+        "<a>href=  \"" + sito + "\"</a></b>", {
             "reply_markup": {
                 "keyboard": [
                     ["/findartist", "/topsongartist", "/toptenartist"],

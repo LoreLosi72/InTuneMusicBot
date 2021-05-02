@@ -40,15 +40,17 @@ const bot = new TelegramBot(Token, {
 });
 //bot
 bot.onText(/\/start/, (msg) => {
-    bot.sendMessage(msg.chat.id, "Benvenuto su InTuneMusicBot, Tutte le informazioni live su artisti, canzoni, playlist, album e classifiche" + guitar, {
-        "reply_markup": {
-            "keyboard": [
-                ["/findartist", "/topsongartist", "/toptenartist"],
-                ["/findtrackdeezer", "/findtrackitunes", "/toptentracks"],
-                ["/findplaylist", "toptenalbum"]
-            ]
-        }
-    })
+    var sito = "https://intunemusic-telegram.herokuapp.com/";
+    bot.sendMessage(msg.chat.id, "<b>Benvenuto su InTuneMusicBot, Tutte le informazioni live su artisti, canzoni, playlist, album e classifiche" + guitar + "\n Visita il nostro sito: " +
+        "<a href=  \"" + sito + "\"</a></b>", {
+            "reply_markup": {
+                "keyboard": [
+                    ["/findartist", "/topsongartist", "/toptenartist"],
+                    ["/findtrackdeezer", "/findtrackitunes", "/toptentracks"],
+                    ["/findplaylist", "toptenalbum"]
+                ]
+            }
+        })
 });
 
 //FIND ARTIST

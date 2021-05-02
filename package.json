@@ -1,0 +1,33 @@
+{
+  "name": "intunemusicbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "colors": "^1.4.0",
+    "deezer-public-api": "^1.0.4",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "google-images": "^2.1.0",
+    "itunes-web-api": "^1.0.7",
+    "last-fm": "^5.3.0",
+    "node-emoji": "^1.10.0",
+    "node-telegram-bot-api": "^0.52.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "search": "^1.0.0",
+    "spotify-info.js": "^1.0.4",
+    "wikiapi": "^1.15.0",
+    "wikijs": "^6.2.0",
+    "youtube": "^0.1.0",
+    "youtube-api": "^3.0.1",
+    "youtube-search": "^1.1.6"
+  }
+}
